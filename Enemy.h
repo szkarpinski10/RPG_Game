@@ -13,7 +13,6 @@ class Enemy:public Character{
     
     // getter
     int get_expReward()const{return expReward;}
-
     int get_goldReward()const{return goldReward;}
 
     //metody

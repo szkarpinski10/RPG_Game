@@ -1,4 +1,21 @@
 #include "character.h"
 #include <iostream>
 
+//
+Character::Character(std::string name,int hp, int attack,int armor,int maxHp)
+: name(name), hp(hp), maxHp(maxHp),attack(attack),armor(armor) {}
 
+
+void Character::takeDamage(int dmg){
+    hp=std::max(0,hp-dmg);
+}
+
+void Character::heal(int amount){
+    hp=std::min(maxHp,hp+amount);
+}
+bool Character::isAlive()const{
+    if (hp<=0){
+    return false;
+    }
+    return true;
+}

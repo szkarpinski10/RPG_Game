@@ -18,7 +18,7 @@ class Character{
     
     public:
     //konstruktor
-    Character(std::string n,int hp,int attack,int armor,int maxHp);
+    Character(std::string name,int hp,int attack,int armor,int maxHp);
     //destruktor
     virtual ~Character()=default;
 
@@ -35,6 +35,7 @@ class Character{
     int get_maxHp()const{return maxHp;}
      
     // atak i otrzymywanie obrazen
+    // metoda może być nadpisana przez klasy dzieci
     virtual void attackTarget(Character& target)=0;
     void takeDamage(int dmg);
 
