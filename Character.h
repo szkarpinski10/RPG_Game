@@ -9,7 +9,8 @@ class Character{
     int attack;
     int armor;
     int maxHp;
-    // int attackRange;
+    float attackRange;
+    float attackSpeed;
     // int aoe;
     //int speed;
     //int level;
@@ -18,21 +19,19 @@ class Character{
     
     public:
     //konstruktor
-    Character(std::string name,int hp,int attack,int armor,int maxHp);
+    Character(std::string name,int hp,int attack,int armor,int maxHp,float attackRange, float attackSpeed);
     //destruktor
     virtual ~Character()=default;
 
     // gettery 
 
     std::string get_name()const{return name;}
-
     int get_hp()const{return hp;}
-
     int get_attack()const{return attack;}
-    
     int get_armor()const{return armor;}
-
     int get_maxHp()const{return maxHp;}
+    float get_attackRange() const {return attackRange;}
+    float get_attackSpeed() const {return attackSpeed;}
      
     // atak i otrzymywanie obrazen
     // metoda może być nadpisana przez klasy dzieci

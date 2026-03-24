@@ -1,8 +1,12 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
 #include "Hero.h"
 #include "Enemy.h"
-#include <iostream>
+
+using namespace std;
 
 int main() {
-   
+    
     return 0;
 }

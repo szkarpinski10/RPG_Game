@@ -1,7 +1,7 @@
 #include "Enemy.h"
 
 Enemy::Enemy(std::string name,int hp,int attack,int armor,int maxHp,int expReward,int goldReward)
-:Character (name,hp,attack,armor,maxHp),
+:Character (name,hp,attack,armor,maxHp,attackRange,attackSpeed),
 expReward(expReward),goldReward(goldReward) {}
 
 

@@ -2,7 +2,7 @@
 #include <iostream>
 
 //
-Character::Character(std::string name,int hp, int attack,int armor,int maxHp)
+Character::Character(std::string name,int hp, int attack,int armor,int maxHp,float attackRange, float attackSpeed)
 : name(name), hp(hp), maxHp(maxHp),attack(attack),armor(armor) {}
 
 
