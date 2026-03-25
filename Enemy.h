@@ -8,7 +8,7 @@ class Enemy:public Character{
     int goldReward;
 
     public:
-    Enemy(std::string name,int hp,int attack,int armor,int maxHp,int expReward,int goldReward);
+    Enemy(std::string name,int hp,int attack,int armor,int maxHp,int expReward,int goldReward, float attackRange,float attackSpeed );
     ~Enemy()=default;
     
     // getter

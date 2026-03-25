@@ -3,7 +3,7 @@
 
 //
 Character::Character(std::string name,int hp, int attack,int armor,int maxHp,float attackRange, float attackSpeed)
-: name(name), hp(hp), maxHp(maxHp),attack(attack),armor(armor) {}
+: name(name), hp(hp), maxHp(maxHp),attack(attack),armor(armor),attackSpeed(attackSpeed),attackRange(attackRange) {}
 
 
 void Character::takeDamage(int dmg){
