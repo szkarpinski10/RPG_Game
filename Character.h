@@ -13,14 +13,10 @@ class Character{
     float attackSpeed;
     // int aoe;
     //int speed;
-    //int level;
     //int mana;
-    //int stamina;
     
     public:
-    //konstruktor
     Character(std::string name,int hp,int attack,int armor,int maxHp,float attackRange, float attackSpeed);
-    //destruktor
     virtual ~Character()=default;
 
     // gettery 
@@ -34,7 +30,6 @@ class Character{
     float get_attackSpeed() const {return attackSpeed;}
      
     // atak i otrzymywanie obrazen
-    // metoda może być nadpisana przez klasy dzieci
     virtual void attackTarget(Character& target)=0;
     void takeDamage(int dmg);
 
